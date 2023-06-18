@@ -29,7 +29,7 @@ public class CoolMod extends Mod{
 
     @Override
     public void loadContent(){
-        Log.info("Loading some example content.");
+        Log.info("Loading some cool content.");
         CoolItems.load()
         CoolBlocks.load()
     }
