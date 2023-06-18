@@ -31,7 +31,7 @@ public class CoolMod extends Mod{
     public void loadContent(){
         Log.info("Loading some cool content.");
         CoolItems.load();
-        //CoolBlocks.load()
+        //CoolBlocks.load();
     }
 
 }

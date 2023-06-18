@@ -8,8 +8,8 @@ public class CoolItems{
         coolium;
     
     public static void load(){
-        coolium = new Item("coolium", Color.valueOf("72CABD")){
+        coolium = new Item("coolium", Color.valueOf("72CABD")){{
             cost = 1.6f;
-        }
+        }};
     };
 }
