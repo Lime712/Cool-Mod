@@ -10,7 +10,8 @@ import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
 public class CoolMod extends Mod{
-
+    public static final String githubURL = "https://github.com/Lime712/Cool-Mod";
+    public static final String shortName = "Idk but it's a pretty cool mod";
     public CoolMod(){
 
         Events.on(ClientLoadEvent.class, e -> {
@@ -29,6 +30,8 @@ public class CoolMod extends Mod{
     @Override
     public void loadContent(){
         Log.info("Loading some example content.");
+        CoolItems.load()
+        CoolBlocks.load()
     }
 
 }
