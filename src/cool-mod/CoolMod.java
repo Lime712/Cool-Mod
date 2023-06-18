@@ -1,4 +1,4 @@
-package example;
+package cool-mod;
 
 import arc.*;
 import arc.util.*;
