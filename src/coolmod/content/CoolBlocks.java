@@ -1,4 +1,4 @@
-package cool-mod;
+package coolmod;
 
 import arc.*;
 import arc.util.*;

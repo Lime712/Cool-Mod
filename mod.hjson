@@ -2,13 +2,13 @@
 displayName: "Cool Mod"
 
 #the internal name of your mod
-name: "cool-mod"
+name: "coolmod"
 
 #your name
 author: "Me"
 
 #the fully qualified main class of the mod
-main: "cool-mod.CoolMod"
+main: "coolmod.CoolMod"
 
 #the mod description as seen in the mod dialog
 description: "A cool mod."

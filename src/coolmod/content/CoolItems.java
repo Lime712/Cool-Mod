@@ -1,4 +1,4 @@
-package cool-mod;
+package coolmod;
 
 import arc.graphics.*;
 import mindustry.type.*;
