@@ -1,23 +1,23 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Cool Mod"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "cool-mod"
 
 #your name
-author: "You"
+author: "Me"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "cool-mod.CoolMod"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "A cool mod."
 
 #the mod version
-version: 1.0
+version: cool
 
 #the minimum game build required to run this mod
-minGameVersion: 140
+minGameVersion: 144
 
 #this is a java mod
 java: true
