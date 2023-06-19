@@ -19,7 +19,7 @@ import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
-public CoolBlocks {
+public class CoolBlocks {
     public static Block
     //crafting
     cooliumCollider
