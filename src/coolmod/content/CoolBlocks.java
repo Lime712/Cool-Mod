@@ -30,7 +30,7 @@ public class CoolBlocks {
     cooliumCollider;
     public static void load(){
         cooliumCollider = new GenericCrafter("coolium-collider"){{
-            requirements(Category.crafting, ItemStack[ItemStack(Items.lead, 35), ItemStack(Items.thorium, 10)]);
+            requirements(Category.crafting, new ItemStack[]{new ItemStack(Items.lead, 35), new ItemStack(Items.thorium, 10)});
             health = 200;
             itemCapacity = 10;
             craftEffect = Fx.ventSteam;
