@@ -30,13 +30,13 @@ public class CoolBlocks {
     cooliumCollider;
     public static void load(){
         cooliumCollider = new GenericCrafter("coolium-collider"){{
-            requirements(Category.crafting, with(Items.lead, 35, Items.thorium, 10));
+            requirements(Category.crafting, ItemStack(Items.lead, 35, Items.thorium, 10));
             health = 200;
             itemCapacity = 10;
             craftEffect = Fx.ventSteam;
             craftTime = 360f;
             outputItem = new ItemStack(CoolItems.coolium, 1);
-            consumePower = 2f;
+            consumePower(4f);
             consumeItems(new ItemStack(Items.surgeAlloy, 1));
             consumeLiquid(Liquids.cryofluid, 0.3f);
         }};
