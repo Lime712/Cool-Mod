@@ -22,7 +22,7 @@ import mindustry.world.meta.*;
 public class CoolBlocks {
     public static Block
     //crafting
-    cooliumCollider
+    cooliumCollider;
     public static void load(){
         cooliumCollider = new GenericCrafter("coolium-collider"){{
             requirements(Category.crafting, with(Items.lead, 35, Items.thorium, 10));
