@@ -1,34 +1,50 @@
 package coolmod;
 
-import arc.*;
 import arc.graphics.*;
 import arc.math.*;
-import arc.util.*;
+import arc.struct.*;
 import mindustry.*;
-import mindustry.content.*;
 import mindustry.entities.*;
+import mindustry.entities.abilities.*;
 import mindustry.entities.bullet.*;
+import mindustry.entities.effect.*;
 import mindustry.entities.part.DrawPart.*;
 import mindustry.entities.part.*;
 import mindustry.entities.pattern.*;
-import mindustry.entities.effect.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
-import mindustry.ui.*;
+import mindustry.type.unit.*;
 import mindustry.world.*;
+import mindustry.world.blocks.*;
+import mindustry.world.blocks.campaign.*;
+import mindustry.world.blocks.defense.*;
 import mindustry.world.blocks.defense.turrets.*;
+import mindustry.world.blocks.distribution.*;
+import mindustry.world.blocks.environment.*;
+import mindustry.world.blocks.heat.*;
+import mindustry.world.blocks.legacy.*;
+import mindustry.world.blocks.liquid.*;
+import mindustry.world.blocks.logic.*;
+import mindustry.world.blocks.payloads.*;
+import mindustry.world.blocks.power.*;
+import mindustry.world.blocks.production.*;
+import mindustry.world.blocks.sandbox.*;
+import mindustry.world.blocks.storage.*;
+import mindustry.world.blocks.units.*;
+import mindustry.world.consumers.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
-import mindustry.world.blocks.environment.*;
-import mindustry.world.blocks.production.*;
-import mindustry.world.consumers.*;
+
+import static mindustry.Vars.*;
+import static mindustry.type.ItemStack.*;
 
 public class CoolBlocks {
     public static Block
     //crafting
     cooliumCollider;
     public static void load(){
+        
         cooliumCollider = new GenericCrafter("coolium-collider"){{
             requirements(Category.crafting, new ItemStack[]{new ItemStack(Items.lead, 35), new ItemStack(Items.thorium, 10)});
             health = 200;
@@ -39,6 +55,22 @@ public class CoolBlocks {
             consumePower(4f);
             consumeItems(new ItemStack(Items.surgeAlloy, 1));
             consumeLiquid(Liquids.cryofluid, 0.3f);
+            envDisabled |= Env.scorching;
+        }};
+
+        cooliumWall = new Wall("coolium-wall"){{
+            requirements(Category.wall, new ItemStack(CoolItems.coolium, 6));
+            health = 250 * wallHealthMultiplier
+            armor = 20f
+            envDisabled |= Env.scorching;
+        }};
+
+        largeCooliumWall = new Wall("large-coolium-wall"){{
+            requirements(Category.wall, new ItemStack(CoolItems.coolium, 6));
+            health = 250 * 4 * wallHealthMultiplier
+            armor = 20f
+            size = 2
+            envDisabled |= Env.scorching;
         }};
     }
 }
