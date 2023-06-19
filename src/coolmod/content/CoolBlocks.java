@@ -37,7 +37,7 @@ public class CoolBlocks {
             craftTime = 360f;
             outputItem = new ItemStack(CoolItems.coolium, 1);
             consumePower = 2f;
-            consumeItems(with(Items.surgeAlloy, 1));
+            consumeItems(new ItemStack(Items.surgeAlloy, 1));
             consumeLiquid(Liquids.cryofluid, 0.3f);
         }};
     }
