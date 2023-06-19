@@ -20,5 +20,20 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
 public CoolBlocks {
-  
+    public static Block
+    //crafting
+    cooliumCollider
+    public static void load(){
+        cooliumCollider = new GenericCrafter("coolium-collider"){{
+            requirements(Category.crafting, with(Items.lead, 35, Items.thorium, 10));
+            health = 200;
+            itemCapacity = 10;
+            craftEffect = Fx.ventSteam;
+            craftTime = 360f;
+            outputItem = new ItemStack(CoolItems.coolium);
+            consumePower = 2f;
+            consumeItems(with(Items.surgeAlloy));
+            consumeLiquid(Liquids.cryofluid, 0.3f);
+        }};
+    }
 }
