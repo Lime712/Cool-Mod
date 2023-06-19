@@ -65,7 +65,7 @@ public class CoolBlocks {
             envDisabled |= Env.scorching;
         }};
 
-        largeCooliumWall = new Wall("large-coolium-wall"){{
+        largeCooliumWall = new Wall("coolium-wall-large"){{
             requirements(Category.wall, new ItemStack(CoolItems.coolium, 6));
             health = 250 * 4 * wallHealthMultiplier
             armor = 20f
