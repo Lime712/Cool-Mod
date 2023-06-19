@@ -60,16 +60,16 @@ public class CoolBlocks {
 
         cooliumWall = new Wall("coolium-wall"){{
             requirements(Category.wall, new ItemStack(CoolItems.coolium, 6));
-            health = 250 * wallHealthMultiplier
-            armor = 20f
+            health = 250 * wallHealthMultiplier;
+            armor = 20f;
             envDisabled |= Env.scorching;
         }};
 
         largeCooliumWall = new Wall("coolium-wall-large"){{
             requirements(Category.wall, new ItemStack(CoolItems.coolium, 6));
-            health = 250 * 4 * wallHealthMultiplier
-            armor = 20f
-            size = 2
+            health = 250 * 4 * wallHealthMultiplier;
+            armor = 20f;
+            size = 2;
             envDisabled |= Env.scorching;
         }};
     }
