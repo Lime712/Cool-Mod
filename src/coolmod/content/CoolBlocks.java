@@ -4,12 +4,14 @@ import arc.*;
 import arc.graphics.*;
 import arc.math.*;
 import arc.util.*;
+import mindustry.*;
 import mindustry.content.*;
 import mindustry.entities.*;
 import mindustry.entities.bullet.*;
 import mindustry.entities.part.DrawPart.*;
 import mindustry.entities.part.*;
 import mindustry.entities.pattern.*;
+import mindustry.entities.effect.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
@@ -18,6 +20,9 @@ import mindustry.world.*;
 import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
+import mindustry.world.blocks.environment.*;
+import mindustry.world.blocks.production.*;
+import mindustry.world.consumers.*;
 
 public class CoolBlocks {
     public static Block
