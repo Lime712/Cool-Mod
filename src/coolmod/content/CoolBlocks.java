@@ -37,8 +37,8 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
 import mindustry.content.items.*;
-import mindustry.content.liquids.*
-import mindustry.content.fx.*
+import mindustry.content.liquids.*;
+import mindustry.content.fx.*;
 
 import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
