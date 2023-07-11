@@ -39,9 +39,6 @@ import mindustry.world.meta.*;
 import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
 
-import static mindustry.Vars.*;
-import static mindustry.type.ItemStack.*;
-
 public class CoolBlocks {
     public static Block
     //crafting
@@ -70,7 +67,7 @@ public class CoolBlocks {
             envDisabled |= Env.scorching;
         }};
 
-        CooliumWallLarge = new Wall("coolium-wall-large"){{
+        cooliumWallLarge = new Wall("coolium-wall-large"){{
             requirements(Category.defense, new ItemStack(CoolItems.coolium, 24));
             health = 250 * 4 * wallHealthMultiplier;
             armor = 20f;
