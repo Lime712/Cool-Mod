@@ -1,5 +1,5 @@
 # Cool Mod
-Me trying to make a java mod, using the java mod template, a Java Mindustry mod template that works on Android and PC. The Kotlin version of this mod can be seen [here](https://github.com/Anuken/MindustryKotlinModTemplate).
+Me trying to make a java mod, using the java mod template, a Java Mindustry mod template that works on Android and PC. The Kotlin version of the template used can be seen [here](https://github.com/Anuken/MindustryKotlinModTemplate).
 
 ## Building for Desktop Testing
 
