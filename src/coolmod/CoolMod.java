@@ -30,8 +30,8 @@ public class CoolMod extends Mod{
     @Override
     public void loadContent(){
         Log.info("Loading some cool content.");
-        content.CoolItems.load();
-        content.CoolBlocks.load();
+        coolmod.content.CoolItems.load();
+        coolmod.content.CoolBlocks.load();
     }
 
 }
