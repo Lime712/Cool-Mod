@@ -41,7 +41,7 @@ import mindustry.world.meta.*;
 import mindustry.content.Items.*;
 import mindustry.content.Liquids.*;
 import mindustry.content.Fx.*;
-import mindustry.world.blocks.defense.Wall.*
+import mindustry.world.blocks.defense.Wall.*;
 
 import coolmod.content.CoolItems.*;
 
