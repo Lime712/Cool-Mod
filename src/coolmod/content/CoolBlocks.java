@@ -41,6 +41,7 @@ import mindustry.world.meta.*;
 import mindustry.content.Items.*;
 import mindustry.content.Liquids.*;
 import mindustry.content.Fx.*;
+import mindustry.world.blocks.defense.Wall.*
 
 import coolmod.content.CoolItems.*;
 
@@ -69,14 +70,14 @@ public class CoolBlocks {
         }};
 
         cooliumWall = new Wall("coolium-wall"){{
-            requirements(Category.defense, new ItemStack(CoolItems.coolium, 6));
+            requirements(Category.defense, with(CoolItems.coolium, 6));
             health = 250 * wallHealthMultiplier;
             armor = 20f;
             envDisabled |= Env.scorching;
         }};
 
         cooliumWallLarge = new Wall("coolium-wall-large"){{
-            requirements(Category.defense, new ItemStack(CoolItems.coolium, 24));
+            requirements(Category.defense, with(CoolItems.coolium, 24));
             health = 250 * 4 * wallHealthMultiplier;
             armor = 20f;
             size = 2;
