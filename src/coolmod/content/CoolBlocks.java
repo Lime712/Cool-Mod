@@ -39,17 +39,22 @@ import mindustry.world.meta.*;
 import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
 
+import static mindustry.Vars.*;
+import static mindustry.type.ItemStack.*;
+
 public class CoolBlocks {
     public static Block
     //crafting
-    cooliumCollider;
+    cooliumCollider,
+    //defense
+    cooliumWall, cooliumWallLarge;
     public static void load(){
         
         cooliumCollider = new GenericCrafter("coolium-collider"){{
-            requirements(Category.crafting, new ItemStack[]{new ItemStack(Items.lead, 35), new ItemStack(Items.thorium, 10)});
-            health = 200;
+            requirements(Category.crafting, with(Items.thorium, 60, Items.lead, 40, Items.silicon, 30, Items.phaseFabric, 15));
             itemCapacity = 10;
-            craftEffect = Fx.ventSteam;
+            craftEffect = Fx.formSmoke;
+            updateEffect = Fx.ventSteam;
             craftTime = 360f;
             outputItem = new ItemStack(CoolItems.coolium, 1);
             consumePower(4f);
@@ -59,14 +64,14 @@ public class CoolBlocks {
         }};
 
         cooliumWall = new Wall("coolium-wall"){{
-            requirements(Category.wall, new ItemStack(CoolItems.coolium, 6));
+            requirements(Category.defense, new ItemStack(CoolItems.coolium, 6));
             health = 250 * wallHealthMultiplier;
             armor = 20f;
             envDisabled |= Env.scorching;
         }};
 
         largeCooliumWall = new Wall("coolium-wall-large"){{
-            requirements(Category.wall, new ItemStack(CoolItems.coolium, 6));
+            requirements(Category.defense, new ItemStack(CoolItems.coolium, 24));
             health = 250 * 4 * wallHealthMultiplier;
             armor = 20f;
             size = 2;
