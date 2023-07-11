@@ -1,4 +1,4 @@
-package coolmod;
+package coolmod.content;
 
 import arc.graphics.*;
 import arc.math.*;
@@ -42,7 +42,7 @@ import mindustry.content.Items.*;
 import mindustry.content.Liquids.*;
 import mindustry.content.Fx.*;
 
-import coolmod.content.CoolItems;
+import coolmod.content.CoolItems.*;
 
 import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
