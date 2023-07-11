@@ -59,7 +59,7 @@ public class CoolBlocks {
         cooliumCollider = new GenericCrafter("coolium-collider"){{
             requirements(Category.crafting, with(Items.thorium, 60, Items.lead, 40, Items.silicon, 30, Items.phaseFabric, 15));
             itemCapacity = 10;
-            craftEffect = Fx.formSmoke;
+            craftEffect = Fx.formsmoke;
             updateEffect = Fx.ventSteam;
             craftTime = 360f;
             outputItem = new ItemStack(CoolItems.coolium, 1);
@@ -68,6 +68,8 @@ public class CoolBlocks {
             consumeLiquid(Liquids.cryofluid, 0.3f);
             envDisabled |= Env.scorching;
         }};
+
+        int wallHealthMultiplier = 4;
 
         cooliumWall = new Wall("coolium-wall"){{
             requirements(Category.defense, with(CoolItems.coolium, 6));
