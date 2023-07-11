@@ -15,6 +15,8 @@ import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
 import mindustry.type.unit.*;
+import mindustry.ui.*;
+import mindustry.content.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
 import mindustry.world.blocks.campaign.*;
